@@ -1,7 +1,8 @@
 Feature: Find movie title in simple string
 
   Scenario: Finds a movie in a string that contains one
-    Given "Water World" is a movie title
-    And I provide "Water World" 
-    When I ask for a matching movie title
-    Then it should return "Water World"
+    Given a source with "Water World" as a movie title
+    And I provide a simple string "Water World" to the scanner
+    And I create a FanBoy
+    When I ask the FanBoy for matching movie titles
+    Then the results should include "Water World"
