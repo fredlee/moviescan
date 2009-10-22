@@ -14,6 +14,11 @@ module MovieScan
         @movie_source.match(["a"]).should == ["a"]
       end    
 
+      it "returns an array of parital matches" do
+        @movie_source = MovieSource.new("aa", "ab", "cc")
+        @movie_source.match(["a"]).should == ["aa", "ab"]
+      end    
+
     end
   end
 end
