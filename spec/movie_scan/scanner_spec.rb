@@ -12,6 +12,12 @@ module MovieScan
         scanner = Scanner.new("foo, bar, baz")
         scanner.guesses.should == ['foo', 'bar', 'baz']
       end
+
+      it "splits the text by space and returns an array" do
+        scanner = Scanner.new("foo bar baz")
+        scanner.guesses.should == ['foo', 'bar', 'baz']
+      end
     end
+
   end
 end

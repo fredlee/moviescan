@@ -7,7 +7,7 @@ module MovieScan
     end
 
     def guesses
-      @text.split(',').map { |name| name.strip }
+      @text.split(/[,\s]+/).map { |name| name.strip }
     end
   end
 end

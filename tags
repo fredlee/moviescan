@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FanBoy	lib/movie_scan/fan_boy.rb	/^  class FanBoy$/;"	c	class:MovieScan
+MovieScan	lib/movie_scan/fan_boy.rb	/^module MovieScan$/;"	m
+MovieScan	lib/movie_scan/movie_source.rb	/^module MovieScan$/;"	m
+MovieScan	lib/movie_scan/scanner.rb	/^module MovieScan$/;"	m
+MovieScan	spec/movie_scan/fan_boy_spec.rb	/^module MovieScan$/;"	m
+MovieScan	spec/movie_scan/movie_source_spec.rb	/^module MovieScan$/;"	m
+MovieScan	spec/movie_scan/scanner_spec.rb	/^module MovieScan$/;"	m
+MovieSource	lib/movie_scan/movie_source.rb	/^  class MovieSource$/;"	c	class:MovieScan
+Scanner	lib/movie_scan/scanner.rb	/^  class Scanner$/;"	c	class:MovieScan
+guesses	lib/movie_scan/scanner.rb	/^    def guesses$/;"	f	class:MovieScan.Scanner
+initialize	lib/movie_scan/fan_boy.rb	/^    def initialize(movie_source, scanner)$/;"	f	class:MovieScan.FanBoy
+initialize	lib/movie_scan/movie_source.rb	/^    def initialize(*movie_titles)$/;"	f	class:MovieScan.MovieSource
+initialize	lib/movie_scan/scanner.rb	/^    def initialize(text)$/;"	f	class:MovieScan.Scanner
+match	lib/movie_scan/movie_source.rb	/^    def match(title_guesses)$/;"	f	class:MovieScan.MovieSource
+movies	lib/movie_scan/fan_boy.rb	/^    def movies$/;"	f	class:MovieScan.FanBoy
