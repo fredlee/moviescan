@@ -5,9 +5,9 @@ module MovieScan
       @movie_titles = movie_titles
     end
     
-    def match(title_guess)
+    def match(title_guesses)
       @movie_titles.select do |title|
-        title == title_guess
+        title_guesses.any? { |guess| guess == title }
       end
     end
 

@@ -10,10 +10,11 @@ Given /^I create a FanBoy$/ do
   @fan_boy = MovieScan::FanBoy.new(@movie_source, @scanner)
 end
 
-When /^I ask for a matching movie title$/ do
+When /^I ask the FanBoy for matching movie titles$/ do
+  @movies = @fan_boy.movies
 end
 
 Then /^the results should include "([^\"]*)"$/ do |title|
-  pending
+  @movies.should include(title)
 end
 

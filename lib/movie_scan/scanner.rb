@@ -1,9 +1,13 @@
 module MovieScan
   class Scanner
-    attr_reader :text, :source
+    attr_reader :text
 
-    def initialize(source, text)
-      @source, @text = source, text
+    def initialize(text)
+      @text = text
+    end
+
+    def guesses
+      @text.split(',').map { |name| name.strip }
     end
   end
 end
