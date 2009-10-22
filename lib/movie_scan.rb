@@ -1,1 +1,1 @@
-require 'moviescan/scanner'
+require 'movie_scan/scanner'
