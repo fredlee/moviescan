@@ -1,9 +1,9 @@
-Given /^I provide "([^\"]*)"$/ do |simple_string|
-  @scanner = MovieScan::Scanner.new(simple_string)
+Given /^"([^\"]*)" is a movie title$/ do |title|
+  @movie_source = MovieScan::MovieSource.new(title)
 end
 
-Given /^"([^\"]*)" is a movie title$/ do |arg1|
-  pending
+Given /^I provide "([^\"]*)"$/ do |simple_string|
+  @scanner = MovieScan::Scanner.new(@movie_source, simple_string)
 end
 
 When /^I ask for a matching movie title$/ do
