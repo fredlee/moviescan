@@ -1,4 +1,4 @@
-module Moviescan
+module MovieScan
   class Scanner
     attr_reader :text
 

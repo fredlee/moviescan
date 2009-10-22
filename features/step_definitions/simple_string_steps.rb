@@ -1,5 +1,5 @@
 Given /^I provide "([^\"]*)"$/ do |simple_string|
-  @scanner = Moviescan::Scanner.new(simple_string)
+  @scanner = MovieScan::Scanner.new(simple_string)
 end
 
 Given /^"([^\"]*)" is a movie title$/ do |arg1|
