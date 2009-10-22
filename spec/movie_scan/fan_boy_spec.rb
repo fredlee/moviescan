@@ -10,6 +10,14 @@ module MovieScan
         
         FanBoy.new(movie_source, scanner).movies.should == ['a']
       end
+
+      it "includes only exact matches if any exist" do
+        movie_source = mock('Movie Source')
+        scanner = mock('Scanner', :guesses => ['foo', 'bam', 'boom'], :text => "foo bam boom")
+        movie_source.should_receive(:match).with(['foo', 'bam', 'boom']).and_return(['foo bam', 'foo foo'])
+        
+        FanBoy.new(movie_source, scanner).movies.should == ['foo bam']
+      end
     end
   end
 end
